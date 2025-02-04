@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+    <script src="https://unpkg.com/lightweight-charts@3.4.0/dist/lightweight-charts.standalone.production.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <button id="theme-toggle">Pakeisti dizaina</button>
+    <div id="header">Crypto Dashboard</div>
+
+    <div id="controls">
+        <button id="toggleRSI">Rodyti RSI linija</button>
+        <button id="toggleSMA">Rodyti SMA linija</button> 
+       
+        <select id="symbol">
+			<option value="...">...</option>
+            <option value="BTCUSDT">BTC/USDT</option>
+            <option value="SOLUSDT">SOL/USDT</option>
+            <option value="ETHUSDT">ETH/USDT</option>
+            <option value="BNBUSDT">BNB/USDT</option>
+            <option value="XRPUSDT">XRP/USDT</option>
+            <option value="ADAUSDT">ADA/USDT</option>
+            <option value="DOGEUSDT">DOGE/USDT</option>
+            <option value="DOTUSDT">DOT/USDT</option>
+            <option value="MATICUSDT">MATIC/USDT</option>
+            <option value="LTCUSDT">LTC/USDT</option>
+            <option value="SHIBUSDT">SHIB/USDT</option>
+            <option value="AVAXUSDT">AVAX/USDT</option>
+            <option value="TRXUSDT">TRX/USDT</option>
+            <option value="UNIUSDT">UNI/USDT</option>
+            <option value="WBTCUSDT">WBTC/USDT</option>
+            <option value="ATOMUSDT">ATOM/USDT</option>
+            <option value="XLMUSDT">XLM/USDT</option>
+            <option value="LINKUSDT">LINK/USDT</option>
+            <option value="BCHUSDT">BCH/USDT</option>
+            <option value="NEARUSDT">NEAR/USDT</option>
+            <option value="FILUSDT">FIL/USDT</option>
+            <option value="ALGOUSDT">ALGO/USDT</option>
+            <option value="VETUSDT">VET/USDT</option>
+            <option value="ICPUSDT">ICP/USDT</option>
+            <option value="XMRUSDT">XMR/USDT</option>
+            <option value="EGLDUSDT">EGLD/USDT</option>
+            <option value="SANDUSDT">SAND/USDT</option>
+            <option value="AXSUSDT">AXS/USDT</option>
+        </select>
+    </div>
+
+    <div id="loading">Loading data...</div>
+    <div id="recommendation"></div>
+    <div id="chart-container">
+        <div id="chart"></div>
+    </div>
+
+
+    
+<script src="script.js"></script>
+
+
+</body>
+</html>
